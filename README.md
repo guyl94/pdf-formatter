@@ -33,7 +33,7 @@
     ```bash
     docker-compose up -d
     ```
-3.  服务启动后，在浏览器中访问 `http://localhost:8080` 即可使用工具。
+3.  服务启动后，在浏览器中访问 `http://localhost:6530` 即可使用工具。
 
 ## 🛠️ 技术实现
 
