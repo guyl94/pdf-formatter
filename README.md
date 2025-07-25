@@ -16,18 +16,29 @@
 
 ## 🚀 如何使用
 
+### 方法一：直接在浏览器中打开
+
 1.  用浏览器打开 `index.html` 文件。
 2.  将从 PDF 中复制的、带有格式问题的文本粘贴到左侧的“输入框”中。
 3.  点击“格式化”按钮。
 4.  格式化后的干净文本会立即显示在右侧的“输出框”中。
 5.  点击“复制结果”按钮，即可方便地将处理好的文本复制到剪贴板。
 
+### 方法二：使用 Docker Compose 部署
+
+如果您安装了 Docker，可以使用 `docker-compose.yml` 文件一键部署。
+
+1.  确保您的电脑上已经安装了 Docker 和 Docker Compose。
+2.  在项目根目录下，运行以下命令启动服务：
+    ```bash
+    docker-compose up -d
+    ```
+3.  服务启动后，在浏览器中访问 `http://localhost:8080` 即可使用工具。
+
 ## 🛠️ 技术实现
 
-- **HTML**: 构建基础的用户界面，包括输入/输出文本框和操作按钮。
+该工具采用纯前端技术栈构建，核心技术包括：
+
+- **HTML5**: 构建页面结构和交互元素
 - **CSS**: 提供简洁、美观的界面样式，提升用户体验。
 - **JavaScript**: 实现核心的格式化逻辑，通过一系列精心设计的正则表达式，智能地识别和修复各种格式问题。
-
----
-
-This is a simple yet powerful web tool designed to quickly fix common formatting issues when copying text from PDF files. It intelligently handles mixed Chinese and English text, cleaning up unnecessary line breaks, spaces, and hyphens with a single click to produce clean, well-formatted text.

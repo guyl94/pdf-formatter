@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  pdf-formatter:
+    image: ghcr.io/guyl94/pdf-formatter:latest
+    ports:
+      - "8080:80"
+    container_name: pdf-formatter-app

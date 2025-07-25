@@ -1,0 +1,10 @@
+# 忽略 .git 目录
+.git
+# 忽略 .vscode 目录
+.vscode
+# 忽略 README.md 文件
+README.md
+# 忽略 Dockerfile 本身
+Dockerfile
+# 忽略 .dockerignore 文件
+.dockerignore
