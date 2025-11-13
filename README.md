@@ -33,11 +33,26 @@
 如果您安装了 Docker，可以使用 `docker-compose.yml` 文件一键部署。
 
 1.  确保您的电脑上已经安装了 Docker 和 Docker Compose。
-2.  在项目根目录下，运行以下命令启动服务：
+2.  新建文件夹pdf-formatter
+    ```bash
+    mkdir pdf-formatter
+    cd pdf-formatter
+    ```
+3.  在文件夹中新建一个docker-compose.yml文件，并在文件中输入以下内容并保存
+    ```bash
+    version: '3.8'
+    services:
+    pdf-formatter:
+    image: ghcr.io/guyl94/pdf-formatter:latest
+    ports:
+      - "6530:6530"
+    container_name: pdf-formatter-app
+    ```
+5.  在该目录下，运行以下命令启动服务：
     ```bash
     docker-compose up -d
     ```
-3.  服务启动后，在浏览器中访问 `http://localhost:6530` 即可使用工具。
+6.  服务启动后，在浏览器中访问 `http://localhost:6530` 即可使用工具。
 
 ## 🛠️ 技术实现
 
