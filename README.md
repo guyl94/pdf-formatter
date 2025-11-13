@@ -45,7 +45,7 @@
     pdf-formatter:
     image: ghcr.io/guyl94/pdf-formatter:latest
     ports:
-      - "6530:6530"
+      - "6530:80"
     container_name: pdf-formatter-app
     ```
 5.  在该目录下，运行以下命令启动服务：
